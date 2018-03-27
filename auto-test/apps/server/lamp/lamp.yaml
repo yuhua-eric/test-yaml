@@ -9,6 +9,8 @@ metadata:
         - server
     os:
         - centos
+        - ubuntu
+        - debian
     devices:
         - d05
         - d03
