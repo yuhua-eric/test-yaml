@@ -7,7 +7,7 @@ cd ../../../utils
 cd -
 #distro=`cat /etc/redhat-release | cut -b 1-6`
 case $distro in
-    "ubuntu")
+    "debian" | "ubuntu")
           apt-get install samba -y
           apt-get install smbclient -y
           apt-get install expect -y
@@ -25,7 +25,7 @@ case $distro in
           ;;
 esac
 case $distro in
-    "ubuntu")
+    "debian" | "ubuntu")
 
          systemctl start samba
          print_info $? start_smb
