@@ -96,6 +96,7 @@ grep 'the data is' ./output
 print_info $? php-for
 
 curl -o "output" "http://localhost/if.php"
+cat ./output
 grep 'Have a good day' ./output
 print_info $? php-if
 
