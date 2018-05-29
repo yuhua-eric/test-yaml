@@ -185,4 +185,9 @@ case $distro in
         remove_deps "${pkgs}"
         print_info $? remove-package
         ;;
+    "fedora")
+        echo "now we test fedora"
+        print_info $? test_fedora
+        ;;
+        
 esac
