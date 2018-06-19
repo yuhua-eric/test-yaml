@@ -1,12 +1,12 @@
 
 metadata:
-    name: qperf_basic_testing
+    name: "dnsmasq"
     format: "Lava-Test-Shell Test Definition 1.0"
-    description: "test the network and bandwidth"
+    description: "Dnsmasq is tool for configuring DNS servers and DHCP servers"
     maintainer:
         - hongxin_228@163.com
     scope:
-        - performance
+        - distribution
     os:
         - centos
         - ubuntu
@@ -16,9 +16,10 @@ metadata:
     level: 1
 run:
     steps:
-        - "cd auto-test/apps/performance/qperf; ./qperf.sh; "
+        - "cd auto-test/distributions/distribution/dnsmasq; ./dnsmasq.sh; cd -"
 parse:
    pattern: "^(?!.+ED)(?P<test_case_id>\\w+)\\s+(?P<result>\\w+)\\s+\\d$"
    fixupdict:
    FAIL: fail
    PASS: pass
+
