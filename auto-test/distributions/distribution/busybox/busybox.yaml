@@ -11,6 +11,8 @@ metadata:
         - debian
         - centos
         - ubuntu
+        - fedora
+        - opensuse
     devices:
         - d05
         - d03

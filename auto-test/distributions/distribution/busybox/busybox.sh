@@ -88,3 +88,26 @@ case $distro in
      print_info $? remove-package
      ;;
 esac
+
+case $distro in
+    "fedora")
+     echo "so we test fedora"
+     print_info $? test_fedora1
+     echo "get it"
+     print_info $? test_fedora2
+     ls
+     print_info $? test_fedora3
+     ;;
+esac
+
+case $distro in
+    "opensuse")
+     echo "so we test opensuse"
+     print_info $? test_fedora1
+     echo "get it"
+     print_info $? test_fedora2
+     ls
+     print_info $? test_fedora3
+     ;;
+esac
+
